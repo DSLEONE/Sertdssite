@@ -1,0 +1,248 @@
+/*Home and Navbar*/
+
+#home_container{
+    background-color: #232323;
+    height: 80vh;
+    max-height: 600px;
+    min-height: 500px;
+}
+#home_content{
+    height: 80vh;
+    max-height: 600px;
+    min-height: 500px;
+}
+#hero_support_description{
+    position: relative;
+}
+.navbar_desktop{
+    position: absolute !important;
+    top: 20px;
+}
+.navbar_mobile{
+    display: none !important;
+}
+.option{
+    font-size: 1.2rem !important;
+}
+#hero_image_support{
+    object-fit: contain;
+        height: 75%;
+}
+/*Main*/
+#main_content_background{
+    background-color: #1E1E1E;
+}
+#main_title{
+    letter-spacing: 20px;
+    text-indent: 20px;
+}
+#lb_table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+tr{
+    background-color: black;
+    height: 70px;
+}
+th{
+    width: 33.33333333%;
+}
+#lb_title{
+    margin-bottom: 30px;
+}
+table tr:nth-child(odd) td{
+    background-color: #1A1A1A;
+}
+.lb_table_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+table tr:nth-child(even) td{
+    background-color: #151515;
+}
+#lb_table_inner{
+
+}
+#lb_table_header{
+    background-color: black;
+}
+#lb_table_inner tr{
+    color: white;
+    font-size: 24px;
+    font-family: "Barlow";
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#lb_table_inner tr th, #lb_table_inner tr td{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+#lb_table_inner tr th{
+    font-size: 36px;    
+}
+#controls_container{
+    height: fit-content;
+    flex-wrap: nowrap;
+}
+.page_back,.page_foward{
+    display: block;
+    background-color: transparent;
+    min-width: 50px;
+    min-height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px; 
+}
+#hero_content_text_lb{
+    transform: translate(-550px, 0px );
+    transition: 0.75s ease-in-out;
+}
+.hero_content_text_lb_active{
+    transform: translate(-0px, 0px ) !important;
+}
+.control_unit{
+    display: block;
+    background-color: transparent;
+    min-width: 50px;
+    min-height: 50px;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important; 
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+.control_unit_link{
+    text-decoration: none !important;
+}
+.control_unit:hover{
+    background-color: white;
+    border-color: white;
+    color: black !important;
+}
+.pagination{
+    gap: 0.5rem;
+}
+/*Here is where the pain begins*/
+
+@media (max-width:1500px) {
+
+}
+@media (max-width:1399.98px) {
+    .option{
+        font-size: 1rem !important;
+    }
+    #navbar_list_options{
+        gap: 1.5rem !important;
+    }
+    #hero_title{
+        font-size: calc(1rem + 3.3vw);
+    }
+    #hero_description{
+        font-size: 1.25rem !important;
+    }
+    #hero_image_support_description{
+        align-items: center !important;
+    }
+    #hero_image_support{
+        object-fit: contain;
+            height: 60% !important;
+    }
+}
+@media (max-width:1199.98px){
+}
+@media (max-width:991.98px) {
+    #home_container{
+        height: 100vw;
+    }
+    #hero_image_support{
+        display: none;
+    }
+    #hero_image_support_container{
+        display: none !important;
+    }
+    #hero_navbar{
+        display: none !important;
+    }
+    .navbar_mobile{
+        display: block !important;
+    }
+    #hero_support_description{
+        text-align: center !important;
+        padding: 0rem 1rem !important;
+        align-items: center !important;
+    }
+    #hero_content_text_ban_container{
+        margin: 0 !important;
+    }
+    #hero_line{
+        margin: auto !important;
+    }
+    #home_content{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    #hero_description{
+        font-size: 1rem !important;
+    }
+    #home_container{
+        background-image: url(../img/supporto/support_hero_background_alternative_2.jpg);
+        height: 100vh;
+        background-position: center;
+    }
+    #navbar_list_options{
+        gap: 2rem !important;
+    }
+    .navbar_content{
+        text-align: left !important;
+        justify-content: left !important;
+      }
+    #lb_table_inner tr th{
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    #lb_table_inner tr th, #lb_table_inner tr td{
+        padding: 0.5rem;
+    }
+    #lb_table_inner tr{
+        font-size: 1.2rem !important;
+    }
+    
+}
+ @media (max-width:767.98px) {
+    .lb_table_image{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+ }
+@media (max-width:575.98px) {
+    .lb_table_image{
+        display: none;
+    }
+    #main_title{
+        letter-spacing: 5px !important;
+        text-indent: 5px !important;
+    }
+    #lb_table_inner tr th{
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    #lb_table_inner tr th, #lb_table_inner tr td{
+        padding: 0.5rem;
+    }
+    #lb_table_inner tr{
+        font-size: 1rem !important;
+    }
+}

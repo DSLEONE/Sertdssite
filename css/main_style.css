@@ -1,0 +1,506 @@
+/*General*/
+@font-face {
+  font-family: "Barlow";
+  src: url(../fonts/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: "Aquire";
+  src: 
+  url(../fonts/Aquire-BW0ox.otf),
+  url(../fonts/AquireBold-8Ma60.otf),
+}
+@font-face {
+  font-family: "AquireLight";
+  src: url(../fonts/AquireLight-YzE0o.otf);;
+}
+html{
+  overflow-x: hidden;
+}
+p{
+  margin: 0;
+}
+.title{
+  font-family: "AquireLight";
+  color: white;
+  margin: 0;
+}
+.description{
+  font-family: "Barlow";
+  color: white;
+}
+.button{
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  font-family: "Barlow";
+  transition: 0.3s;
+}
+.button:hover{
+  color: black;
+  border: 2px solid white;
+  background-color: white;
+}
+.discord{
+  color: white !important;
+  border: 2px solid white !important;
+  background-color: transparent !important;
+}
+.discord:hover{
+  color: white !important;
+  border: 2px solid #7289da !important;
+  background-color: #7289da !important;
+}
+hr{
+  width: 0%;
+  transition: 2s ease-in-out;
+  border-color: white !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+.line_active{
+  width: 70% !important;
+}
+
+/*Homepage & Navbar*/
+.navbar_icon_mobile{
+  display: none ;
+}
+.navbar_mobile_content_container{
+  display: none !important;
+}
+.navbar{
+  position: absolute !important;
+  width: 100%;
+  z-index: 2;
+}
+.navbar-toggler{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.decoration_bar{
+  height: 2px;
+  background-color: white;
+  position: absolute;
+}
+.option, .option_mobile_support{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem !important;
+  font-family: "Barlow";
+}
+.home_item_hidden{
+  transition: 0s;
+  opacity: 0 ;
+}
+.home_item_active{
+  transition: 2.5s;
+  opacity: 1 !important;
+}
+.logo{
+  width: 75px;
+  height: 75px;
+}
+#home_container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#video_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.home_title{
+  font-family: "AquireLight";
+  color: white;
+  font-size: 175px;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+  text-align: center;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+}
+#typewriter{
+  height: 175px;
+  width: 4px;
+  background-color:white;
+}
+.home_subtitle{
+  font-family: "Barlow";
+  color: white;
+  text-align: center;
+}
+#counter_players_home{
+  font-family: "Barlow";
+  color: white;
+  text-align: center;
+}
+
+/*About*/
+
+#about_section{
+  background-color: #050505;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Servers and Counters*/
+
+#servers_section{
+  background-image: url(../img/homepage/servers_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow:column;
+  align-items: center;
+  z-index: 1; 
+  position: relative;
+  height: fit-content;
+}
+#servers_content{
+  display: flex;
+  flex-flow: column;
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+}
+#servers_title_container{
+  position: static;
+  top: 10vh;
+}
+#server_counter_container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white !important;
+
+}
+.servers_text{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 300px;
+}
+.counter{
+  font-weight: bold;
+  font-size: 64px;
+}
+.counter_title{
+  font-size: 98px;
+}
+
+/*ban and warn*/
+
+#banAndWarn_section{
+  width: 100%;
+  background-color: #070707;
+}
+#banAndWarn_Cam_image{
+  width: 550px;
+}
+/*
+/!\ IN CASE OF EMERGENCY BREAK GLASS /!\
+#banAndWarn_Cam_container{
+  background-image: url(../img/homepage/Cam_bacgkround.png);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+}
+*/
+
+/*Support*/
+
+#support_section{
+  height: fit-content;
+  width: 100%;
+  background-image: url(C:\Users\utente\Downloads\zetasite\zetasite\img\homepage\secchio_sert.jpg);
+  background-position: center;
+}
+
+/*Footer */
+
+footer{
+  background-color: #0F0F0F;
+}
+.footer_social_link{
+  width: fit-content;
+  padding: 10px 5px;
+}
+.footer_social_image{
+  height: 30px;
+}
+
+/*General @meadia tags*/
+
+@media (max-width:991.98px) {
+  .decoration_bar{
+    display: none !important;
+  }
+  .menu{
+    height: 0px;
+  }
+  .navbar_icon_mobile{
+    fill: white !important;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .navbar_mobile_content_container{
+    display: flex !important;
+  }
+  #banAndWarn_Cam_image{
+    display: none !important;
+  }
+  #banAndWarn_Description div{
+    text-align: center;
+  }
+  .navbar{
+    display: block !important;
+    transition: 0.3s ease-in-out;
+  }
+  #navbar_list_options{
+    gap: 2rem !important;
+}
+.navbar_content{
+    text-align: left !important;
+    justify-content: left !important;
+  }
+  .navbar-nav{
+    transition: 1s ease-in-out;
+    margin: 0 !important;
+  align-items: start !important;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  }
+  #navbar_list_options{
+    gap: 2rem !important;
+}
+.option, .option_mobile_support{
+  font-size: 32px !important;
+}
+.navbar_content{
+    text-align: left !important;
+    justify-content: left !important;
+  }
+  .navbar-item_custom{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity:0; 
+    display:none;
+    transition: 0.3s ease-in-out;
+  }
+  #logo_desktop{
+    display: none !important;
+  }
+}
+@media (max-width:767.98px) {
+  #video_background{
+    display: none !important;
+  }
+  #home_container{
+    background: black;
+  }
+  #server_counter_error_description{
+    font-size: 1rem !important;
+  }
+  .home_title{
+    height: 125px;
+    font-size: 125px;
+    letter-spacing: 0.5 !important;
+    text-indent: 0.5rem !important;
+  }
+  #about_section{
+    text-align: left !important;
+  }
+  #about_line{
+    margin: 0 !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+  #typewriter{
+    height: 125px !important;
+    width: 4px;
+    background-color:white;
+  }
+  .line_about_decoration_container, .line_about_decoration_container_bottom, .line_about_decoration_secondary, .line_about_decoration_container_bottom_small{
+    display: none !important;
+  }
+  .container_footer_element{
+    justify-content: center !important;
+  }
+  .servers_cards{
+    height: 500px;
+  }
+}
+@media (max-width:575.98px) {
+  .container_circle_counter_container{
+    display: none !important;
+  }
+  .counter_container{
+    width: fit-content !important;
+    height: fit-content !important;
+    padding: 0;
+    padding-bottom: 3rem !important;
+  }
+  #servers_section{
+    background-position: -1000px 0px;
+  }
+  #servers_title_container{
+    padding-bottom: 0 !important;
+  }
+  #typewriter{
+    height: calc(3rem + 4.5vw) !important;
+    width: 4px;
+    background-color:white;
+  }
+  .home_title{
+    font-size: calc(3rem + 4.5vw) !important;
+    height: calc(3rem + 4.5vw) !important;
+    letter-spacing: 0.5rem !important;
+    text-indent: 0.5rem !important;
+  }
+  #about{
+    text-align: left !important;
+  }
+  #banAndWarn_container{
+    text-align: left !important;
+  }
+  .home_subtitle, #counter_players_home{
+    font-size: 1.25rem !important;
+  }
+}
+.navbar_togler_active{
+  background-color: #1F1F1F;
+  height: 100vh;
+}
+.section{
+  height: 100vh;
+  max-height: 750px;
+  box-sizing: unset !important;
+}
+.line_about_decoration{
+  width: 570px;
+  transition: 1s ease-in-out;
+  height: 2px;
+  background-color: white;
+  transform: rotate(-45deg) scale(0,1);
+  position: absolute;
+}
+.line_about_decoration_secondary{
+  width: 282.84px;
+  transition: 1s ease-in-out;
+  height: 2px;
+  background-color: white;
+  transform: rotate(45deg) scale(0,1);
+  position: absolute;
+}
+.appear_active_line_main{
+  transform: rotate(-45deg) scale(1,1) !important;
+}
+.appear_active_line_secondary{
+  transform: rotate(45deg) scale(1,1) !important;
+}
+.line_about_decoration_container_small{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -50px;
+  left: 50px;
+  position: absolute;
+}
+
+.line_about_decoration_container{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: absolute;
+}
+.line_about_decoration_container_bottom{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.line_about_decoration_container_bottom_small{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -50px;
+  right: 50px;
+  position: absolute;
+}
+.container_circle_counter_container{
+  position: absolute;
+  height: 420px;
+  width: 420px;
+  z-index: -1;
+}
+.first{
+  z-index:0;
+}
+.second{
+z-index:1;
+}
+.counter_container{
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.navbar-item_custom_active{
+  opacity: 1;
+}
+.appear_active{
+  opacity: 1 !important;
+  transform: translate(0,0) !important;
+}
+#about_container{
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(0,150px);
+}
+#servers_container{
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(0,100px);
+}
+#banAndWarn_container{
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(0,100px); 
+}
+#support_container{
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(0,100px); 
+}
